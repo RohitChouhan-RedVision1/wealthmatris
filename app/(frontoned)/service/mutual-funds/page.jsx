@@ -110,7 +110,7 @@ const MutualFunds = async () => {
           <div className="md:col-span-2">
             <div className="rounded-xl overflow-hidden mb-6">
               <Image
-                src="/service/mutual-funds.webp"
+                src="/service/mutual-fund-2.jpg"
                 alt="Mutual Funds Investment"
                 width={800}
                 height={400}

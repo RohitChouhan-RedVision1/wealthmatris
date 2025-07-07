@@ -52,7 +52,7 @@ const GiftCityFunds = async () => {
           <div className="md:col-span-2">
             <div className="rounded-xl overflow-hidden mb-6">
               <Image
-                src="/Services/gift-city-funds.webp"
+                src="/service/gift-city-funds.webp"
                 alt="GIFT City Funds"
                 width={800}
                 height={400}
