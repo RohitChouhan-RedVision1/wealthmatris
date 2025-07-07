@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import "tailwindcss";
+@import "../public/fonts/gt-america/font.css";
+@import "../public/fonts/manier/font.css";
+@import "../public/fonts/beyond_infinity/font.css";
+
+:root {
+  --rv-white: #ffffff;
+  --rv-primary: #0e1323;
+  --rv-secondary: #aaa8a4;
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-sans:  sans-serif; /* Updated font */
+  --font-mono: var(--font-geist-mono);
+  --font-heading:'Manier Thin-Trial',sans-serif;
+  --font-body:'GT America Trial Rg',sans-serif;
+  --font-winky-sans:'Playfair Display',sans-serif;
+  --font-beyond:'Beyond Infinity - Demo',sans-serif;
+  --rv-bg-primary:var(--rv-primary);
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family:var(--font-body) !important;
+}
+p{
+  font-family:var(--font-body) !important;
+  font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: var(--font-heading);
+}
+.hero-title-main {
+    font-size: 48px;
+  font-weight:600;
+}
+.bg-primary {
+  background-color: var(--rv-primary);
+}
+
+.bg-secondary {
+  background-color: var(--rv-secondary);
+}
+
+.text-primary {
+  color: var(--rv-primary);
+}
+
+.text-secondary {
+  color: var(--rv-secondary);
+}
+
+.em_bar {
+  width: 62px;
+}
+
+.em_bar_bg {
+  height: 5px;
+  width: 90px;
+  background: #aaa8a4;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+}
+
+.em_bar_bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2.7px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #0e1323;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-family: var(--font-heading);
+  animation-name: MOVE-BG;
+}
+
+@keyframes MOVE-BG {
+  100%, from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(81px);
+  }
+}
+
+.bannerheading{
+  font-family: var(--font-winky-sans);
+  font-weight: 500;
+  font-size: 50px;
+  /* letter-spacing: 15%; */
+}
+
+.topheading{
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 22px;
+  /* letter-spacing: 15%; */
+}
+
+.subheading{
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 40px;
+  /* letter-spacing: 2%; */
+}
+
+.beyondheading{
+  font-family: var(--font-beyond);
+  font-size: 100px;
+  font-weight: 100;
+}
+
+.section3cardheading{
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 18px;
+  /* letter-spacing: 2%; */
+}
+
+@media (max-width: 720px) {
+  .topheading{
+  
+    font-size: 16px;
+
+  }
+  .subheading {
+    font-size: 30px;
+  }
+
+  .bannerheading{
+    font-size: 40px;
+  }
+  .hero-title-main {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+
+a,button{
+  cursor: pointer;
+}
+
+
+
+.main_section{
+  padding: 60px 0 ;
+}
+
+@media (max-width: 767px) {
+ .main_section{
+  padding: 30px 10px 30px;
+}
+}
+
+
+.customRange {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(
+    to right,
+    var(--rv-primary) 0%,
+    var(--rv-primary) var(--progress, 0%),
+    #e5e7eb var(--progress, 0%),
+    #e5e7eb 100%
+  );
+  border-radius: 9999px;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.customRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--rv-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  /* margin-top: -7px; center thumb */
+  border: 2px solid white;
+}
+
+.customRange::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--rv-primary);
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}

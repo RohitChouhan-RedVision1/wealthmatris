@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Manier Thin-Trial';
+    src: url('Manier-Thin-Trial.eot');
+    src: url('Manier-Thin-Trial.eot?#iefix') format('embedded-opentype'),
+        url('Manier-Thin-Trial.woff2') format('woff2'),
+        url('Manier-Thin-Trial.woff') format('woff'),
+        url('Manier-Thin-Trial.ttf') format('truetype'),
+        url('Manier-Thin-Trial.svg#Manier-Thin-Trial') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manier Light-Trial';
+    src: url('Manier-Light-Trial.eot');
+    src: url('Manier-Light-Trial.eot?#iefix') format('embedded-opentype'),
+        url('Manier-Light-Trial.woff2') format('woff2'),
+        url('Manier-Light-Trial.woff') format('woff'),
+        url('Manier-Light-Trial.ttf') format('truetype'),
+        url('Manier-Light-Trial.svg#Manier-Light-Trial') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manier Medium-Trial';
+    src: url('Manier-Medium-Trial.eot');
+    src: url('Manier-Medium-Trial.eot?#iefix') format('embedded-opentype'),
+        url('Manier-Medium-Trial.woff2') format('woff2'),
+        url('Manier-Medium-Trial.woff') format('woff'),
+        url('Manier-Medium-Trial.ttf') format('truetype'),
+        url('Manier-Medium-Trial.svg#Manier-Medium-Trial') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manier -Trial';
+    src: url('Manier-Regular-Trial.eot');
+    src: url('Manier-Regular-Trial.eot?#iefix') format('embedded-opentype'),
+        url('Manier-Regular-Trial.woff2') format('woff2'),
+        url('Manier-Regular-Trial.woff') format('woff'),
+        url('Manier-Regular-Trial.ttf') format('truetype'),
+        url('Manier-Regular-Trial.svg#Manier-Regular-Trial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manier Bold-Trial';
+    src: url('Manier-Bold-Trial.eot');
+    src: url('Manier-Bold-Trial.eot?#iefix') format('embedded-opentype'),
+        url('Manier-Bold-Trial.woff2') format('woff2'),
+        url('Manier-Bold-Trial.woff') format('woff'),
+        url('Manier-Bold-Trial.ttf') format('truetype'),
+        url('Manier-Bold-Trial.svg#Manier-Bold-Trial') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manier Heavy-Trial';
+    src: url('Manier-Heavy-Trial.eot');
+    src: url('Manier-Heavy-Trial.eot?#iefix') format('embedded-opentype'),
+        url('Manier-Heavy-Trial.woff2') format('woff2'),
+        url('Manier-Heavy-Trial.woff') format('woff'),
+        url('Manier-Heavy-Trial.ttf') format('truetype'),
+        url('Manier-Heavy-Trial.svg#Manier-Heavy-Trial') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,15 @@
+.beborder {
+    border-right: 1px solid var(--rv-primary);
+    padding-right: 20px;
+}
+
+/* Media query for screens smaller than 700px */
+@media (max-width: 1000px) {
+    .beborder {
+        border-right: none; /* Remove the top border */
+        border-bottom: 1px solid var(--rv-primary); /* Add a bottom border */
+        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-right: 0;
+    }
+}

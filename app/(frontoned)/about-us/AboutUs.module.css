@@ -1,0 +1,261 @@
+.aboutPage {}
+
+.aboutSection {}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Image Wrapper & Image Styling */
+.imageWrapper {
+    flex: 1 1 30%;
+    max-width: 400px;
+}
+
+.image {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Wrapper */
+.content {
+    flex: 1 1 65%;
+    padding: 1rem;
+}
+
+/* Typography */
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--rv-primary);
+    margin-bottom: 24px;
+}
+
+.paragraph {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.subheading {
+    font-size: 1.75rem;
+    color: var(--rv-primary);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card Component */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+/* Mission, Vision, Values Section */
+.MissionVisionValuescontainer {}
+
+.aboutsectionvalues {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.rowReverse {
+    flex-direction: row-reverse;
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: var(--rv-primary);
+    margin-bottom: 1rem;
+}
+
+.text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Core Values Section */
+.coreSection {
+    text-align: center;
+}
+
+.coreTitle {
+    font-size: 2.2rem;
+    color: var(--rv-primary);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.valueCard {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+    transform: translateY(-5px);
+}
+
+.valueIcon {
+    font-size: 1.8rem;
+    color: var(--rv-primary);
+    margin-bottom: 0.5rem;
+}
+
+.valueText {
+    font-weight: 600;
+    color: var(--rv-primary);
+}
+
+/* ---------------------------------- */
+/* Responsive Design for Tablets and Mobiles */
+/* ---------------------------------- */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imageWrapper,
+    .content {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+    }
+
+    .coreTitle {
+        font-size: 1.8rem;
+    }
+
+    .valuesGrid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .subheading,
+    .coreTitle {
+        font-size: 1.25rem;
+    }
+
+    .paragraph,
+    .text {
+        font-size: 0.95rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .valueIcon {
+        font-size: 1.5rem;
+    }
+
+    .aboutsectionvalues {
+        gap: 1.5rem;
+        padding: 20px 0;
+    }
+}
+
+.ctaSection {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contentWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1f2937;
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 3rem;
+    }
+}
+
+.subtext {
+    color: #4b5563;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.primaryButton {
+    background-color: var(--rv-primary);
+    color: white;
+    padding: 12px 32px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primaryButton:hover {
+    background-color: var(--rv-secondary);
+}
