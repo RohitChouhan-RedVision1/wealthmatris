@@ -11,13 +11,14 @@ import { getSiteData } from "@/lib/functions";
 import Link from "next/link";
 import React from "react";
 import styles from '../footerpage.module.css'
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
 // import InnerBanner from "@/components/innerBanner/InnerBanner";
 
 const PrivacyPage = async () => {
     const sitedata = await getSiteData();
     return (
         <div className={`${styles.footerpage} `}>
-            {/* <InnerBanner pageName={"Privacy Policy"} /> */}
+            <InnerBanner pageName={"Privacy Policy"} />
             <div className="max-w-screen-xl mx-auto main-section">
 
                 {/* Heading and Subheading */}

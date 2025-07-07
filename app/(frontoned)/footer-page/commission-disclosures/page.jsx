@@ -1,7 +1,9 @@
 import React from "react";
 import { Table, TableHeader, TableBody, TableHead, TableRow, TableCell } from "@/components/ui/table";
 import styles from '../footerpage.module.css'
-import InnerBanner from "@/components/innerBanner/InnerBanner";
+import InnerBanner from "@/components/InnerBanner/InnerBanner";
+
+
 
 const CommissionDisclosurePage = () => {
     return (

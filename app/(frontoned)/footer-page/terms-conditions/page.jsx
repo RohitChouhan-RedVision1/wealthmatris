@@ -1,4 +1,5 @@
 "use client";
+import InnerBanner from '@/components/InnerBanner/InnerBanner';
 // import InnerBanner from '@/components/innerBanner/InnerBanner';
 import styles from '../footerpage.module.css'
 
@@ -6,7 +7,7 @@ export default function TermsConditions() {
 
     return (
         <div className={`${styles.footerpage} `}>
-            {/* <InnerBanner pageName={"Term And Condition"} /> */}
+            <InnerBanner pageName={"Term And Condition"} />
             <div className="max-w-screen-xl mx-auto main-section">
                 <div className="container">
                     <div>

@@ -1,4 +1,5 @@
 "use client";
+import InnerBanner from '@/components/InnerBanner/InnerBanner';
 // import InnerBanner from '@/components/innerBanner/InnerBanner';
 import styles from '../footerpage.module.css'
 
@@ -7,7 +8,7 @@ export default function RiskFactors() {
 
     return (
         <div className={`${styles.footerpage} `}>
-            {/* <InnerBanner pageName={"Risk Factor"} /> */}
+            <InnerBanner pageName={"Risk Factor"} />
 
             <div className="max-w-screen-xl mx-auto main-section" >
 

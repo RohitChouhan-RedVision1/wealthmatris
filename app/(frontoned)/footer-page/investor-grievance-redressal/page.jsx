@@ -1,5 +1,6 @@
 
 // import InnerBanner from '@/components/innerBanner/InnerBanner';
+import InnerBanner from '@/components/InnerBanner/InnerBanner';
 import styles from '../footerpage.module.css'
 import { getSiteData } from "@/lib/functions";
 
@@ -9,7 +10,7 @@ export default async function InvestorGrievanceRedressal() {
 
     return (
         <div className={`${styles.footerpage} `}>
-            {/* <InnerBanner pageName={"Investor Grievance"} /> */}
+            <InnerBanner pageName={"Investor Grievance"} />
             <div className="max-w-screen-xl mx-auto main-section">
 
                 <div className="container">
