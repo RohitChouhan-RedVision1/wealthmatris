@@ -52,7 +52,7 @@ const TravelPlanning = async () => {
           <div className="md:col-span-2">
             <div className="rounded-xl overflow-hidden mb-6">
               <Image
-                src="/services/travel-planning.webp"
+                src="/Services/travel-planning.webp"
                 alt="Travel Planning"
                 width={800}
                 height={400}

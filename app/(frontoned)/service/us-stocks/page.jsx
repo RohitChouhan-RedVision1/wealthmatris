@@ -52,7 +52,7 @@ const UsStocks = async () => {
           <div className="md:col-span-2">
             <div className="rounded-xl overflow-hidden mb-6">
               <Image
-                src="/services/us-investing.webp"
+                src="/Services/us-investing.webp"
                 alt="Invest in US Stocks"
                 width={800}
                 height={400}

@@ -22,7 +22,7 @@ const fadeInVariants = {
 };
 
 export default function InvestmentTabs({service}) {
-  // console.log(service)
+  console.log(service)
   const screenWidth = useScreenSize();
 
 
@@ -66,6 +66,33 @@ export default function InvestmentTabs({service}) {
       }
     ]
   };
+
+   const Card = ({ card }) => (
+    <div className="p-4 justify-center items-center h-[550px] ">
+      <Link href={card.link}>
+        <div className="relative rounded-lg overflow-hidden border shadow-md bg-white h-full flex flex-col">
+          <Image
+            width={450}
+            height={200}
+            src={`/${card?.imageSrc}`}
+            alt={card.name}
+            className="w-full h-[350px] object-cover"
+          />
+          <div className="p-4 flex flex-col justify-between flex-grow">
+            <h3 className="text-xl font-semibold text-[var(--rv-primary)] mb-2">
+              {card?.name}
+            </h3>
+            <p className="text-gray-700 text-md line-clamp-2 mb-2">
+              {card?.description}
+            </p>
+            <span className="font-bold bg-[var(--rv-secondary)] px-4 py-2 rounded-lg pointer text-[var(--rv-primary)] text-sm w-1/3 text-center">
+              Read More
+            </span>
+          </div>
+        </div>
+      </Link>
+    </div>
+  );
   
 
   return (
@@ -120,35 +147,16 @@ export default function InvestmentTabs({service}) {
 
         {useSlider  ? (
           <Slider {...settings}>
-            {service.map((card, index) => (
-              <div key={index} className="p-4">
-                <Link href={card.link}>
-                  <div className="relative rounded-lg overflow-hidden">
-                    <Image width={400} height={400} src={`/${card?.imageSrc}`} alt={card.name} className="w-full h-[400px] object-cover" />
-                    <div className="absolute bottom-0 left-0 right-0 h-[100px] bg-[var(--rv-primary)] p-5 text-center section3cardheading text-white font-semibold">
-                      {card.name}
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </Slider>
+          {service.map((card, index) => (
+            <Card key={index} card={card} />
+          ))}
+        </Slider>
         ) : (
-          <div className="flex flex-wrap justify-center gap-6 justify-items-center">
-
-            {service.map((card, index) => (
-              <div key={index} className="p-4 justify-center items-center h-[400px] max-w-[335px]">
-                <Link href={card.link}>
-                  <div className="relative rounded-lg overflow-hidden">
-                    <Image width={400} height={400} src={`/${card?.imageSrc}`} alt={card.name} className="w-full h-[400px] object-cover" />
-                    <div className="absolute bottom-0 left-0 right-0 h-[100px] bg-[var(--rv-primary)] p-5 text-center text-2xl section3cardheading text-white font-semibold">
-                      {card.name}
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
+          <div className="flex flex-wrap justify-center gap-6">
+          {service.map((card, index) => (
+            <Card key={index} card={card} />
+          ))}
+        </div>
         )}
       </div>
     </div>

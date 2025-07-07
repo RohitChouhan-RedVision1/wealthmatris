@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import axios from "axios";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
+import Link from "next/link";
 
 export function ContactUs({ sitedata }) {
   const [hcaptchaToken, setHcaptchaToken] = useState(null);
@@ -46,7 +47,7 @@ export function ContactUs({ sitedata }) {
 
     try {
       const res = await axios.post("/api/leads", formData);
-      // console.log(res);
+    
       // console.log(res)
 
       if (res.status === 201) {
@@ -72,38 +73,34 @@ export function ContactUs({ sitedata }) {
 
   return (
     <div className="main_section relative bg-[#b2b2b21f]">
-      <section className="max-w-screen-xl mx-auto   flex flex-col md:flex-row gap-8">
+      <section className="max-w-screen-xl mx-auto text-center items-center">
         {/* Left Section */}
-        <div className="md:w-1/2">
-          <h2 className="topheading text-[var(--rv-primary)]">GET STARTED</h2>
+        <h2 className="topheading text-[var(--rv-primary)]">GET STARTED</h2>
           <h2 className="subheading text-[var(--rv-primary)] mb-4">
             Schedule a call to achieve your financial goals
           </h2>
-          <div className="em_bar">
+          <div className="em_bar mx-auto">
             <div className="em_bar_bg" />
           </div>
           <p className="text-black text-lg">
             Unlock expert insights and personalized strategies to grow your
             wealth.
           </p>
-          <ul className="mt-4 space-y-2 text-gray-700 text-lg">
-            <li className="flex gap-2">
-              <IoMdCheckmarkCircleOutline className="text-3xl text-[var(--rv-primary)]" />
-              <p>Talk to an expert about your goals</p>
-            </li>
-            <li className="flex gap-2">
-              <IoMdCheckmarkCircleOutline className="text-3xl text-[var(--rv-primary)]" />
-              <p>Detailed portfolio review</p>
-            </li>
-            <li className="flex gap-2">
-              <IoMdCheckmarkCircleOutline className="text-3xl text-[var(--rv-primary)]" />
-              <p>Get a tailored plan for your goals</p>
-            </li>
-          </ul>
-        </div>
-
         {/* Right Section - Form */}
-        <div className="md:w-1/2 border border-[var(--rv-primary)] rounded-lg p-6">
+        <div className="flex flex-col md:flex-row mt-10 gap-10">
+          <div className="md:w-1/2">
+          <Link href={sitedata.mapurl}>
+          <iframe
+            src={sitedata?.iframe}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen={false}
+            loading="lazy"
+            className="rounded"
+          ></iframe></Link>
+        </div>
+          <div className="md:w-1/2 border border-[var(--rv-primary)] rounded-lg p-6">
           <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
             <input
               name="username"
@@ -159,6 +156,7 @@ export function ContactUs({ sitedata }) {
               {loading ? "Sending..." : "Free Consultancy"}
             </Button>
           </form>
+        </div>
         </div>
       </section>
 

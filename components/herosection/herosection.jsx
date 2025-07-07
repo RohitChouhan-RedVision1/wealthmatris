@@ -51,7 +51,7 @@ export const HeroSection = ({sitedata}) => {
               animate="visible"
               className="flex flex-col items-center justify-center z-10 p-4"
             >
-              <div>
+              {/* <div>
                 <h1 className="bannerheading  mb-10 relative">
                   <motion.span variants={itemVariants} custom={0.1}>
                     Wealth 
@@ -77,14 +77,14 @@ export const HeroSection = ({sitedata}) => {
                       unoptimized
                     />
                   </motion.span>
-                  {/* <motion.span variants={itemVariants1} custom={0.9} className="text-[var(--rv-primary)] beyondheading">Happiness</motion.span> */}
+                  <motion.span variants={itemVariants1} custom={0.9} className="text-[var(--rv-primary)] beyondheading">Happiness</motion.span>
                 </h1>
-              </div>
+              </div> */}
 
               <motion.p
                 variants={itemVariants}
                 custom={1.1}
-                className="hero-title-main "
+                className="hero-title-main mt-20"
               >
                 Let’s Complete Your Wealth Equation.
               </motion.p>

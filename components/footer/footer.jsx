@@ -39,7 +39,7 @@ export function Footer({ sitedata, service, arn, socialMedia }) {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="lg:shadow-[0px_-10px_13px_rgba(0,0,0,0.33)] lg:h-[980px] md:h-[820px]  bg-[var(--rv-primary)] lg:transform lg:rounded-t-full"
+          className="lg:shadow-[0px_-10px_13px_rgba(0,0,0,0.33)] lg:h-[980px] md:h-[950px]  bg-[var(--rv-primary)] lg:transform lg:rounded-t-full"
         >
           <div className="lg:relative lg:top-50 lg:max-w-screen-xl lg:mx-auto lg:items-center text-center p-10 lg:p-0">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 text-sm">

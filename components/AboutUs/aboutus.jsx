@@ -16,7 +16,26 @@ export const AboutSection = () => {
   return (
     <div className="bg-white">
       <div className=" max-w-screen-xl mx-auto main_section">
-        <section className="  flex flex-col lg:flex-row items-center">
+        <section className="  flex flex-col lg:flex-row gap-5 items-center">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.2 }}
+            variants={imageVariants}
+            className="w-full pt-10 lg:pt-0 lg:w-[50%] lg:px-5 lg:ml-5 rounded-lg flex flex-col"
+          >
+            <div className="rounded-lg">
+              <Image src="/Group 8.png" alt="Team" width={550} height={400} className=" rounded-lg" />
+            </div>
+            <div className="mt-5  flex rounded-lg">
+              <div className="w-[60%]">
+                <Image width={500} height={200} src="/new-generation-businessmen-who-are-working (2).png" alt="Team" className="w-full h-[220px] rounded-lg" loading="lazy"/>
+              </div>
+              <div className="w-[40%]">
+                <Image width={500} height={200}  src="/Group 235.svg" alt="Team" className="w-full h-[220px] object-contain" loading="lazy"/>
+              </div>
+            </div>
+          </motion.div>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -48,25 +67,7 @@ export const AboutSection = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: false, amount: 0.2 }}
-            variants={imageVariants}
-            className="w-full pt-10 lg:pt-0 lg:w-[50%] lg:px-5 lg:ml-5 rounded-lg flex flex-col"
-          >
-            <div className="rounded-lg">
-              <Image src="/Group 8.png" alt="Team" width={400} height={400} className="w-full rounded-lg" />
-            </div>
-            <div className="mt-5  flex rounded-lg">
-              <div className="w-[60%]">
-                <Image width={500} height={200} src="/new-generation-businessmen-who-are-working (2).png" alt="Team" className="w-full h-[220px] rounded-lg" loading="lazy"/>
-              </div>
-              <div className="w-[40%]">
-                <Image width={500} height={200}  src="/Group 235.svg" alt="Team" className="w-full h-[220px] object-contain" loading="lazy"/>
-              </div>
-            </div>
-          </motion.div>
+          
         </section>
       </div>
     </div>

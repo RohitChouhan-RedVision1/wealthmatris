@@ -206,23 +206,7 @@ useEffect(() => {
                 </div>
               </div>
 
-              <div className="space-y-8 lg:pl-32 md:pr-40">
-                {/* Invested Amount Section */}
-                <div className="mt-2 pl-5  h-[200px] lg:h-[220px]  bg-white">
-                  {/* <Bar data={chartDataset} options={chartOptions} /> */}
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={chartDataset}>
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <XAxis dataKey="year" />
-                      <YAxis />
-                      <Tooltip />
-                      <Legend />
-                      <Bar dataKey="profit" fill="var(--rv-primary)" stackId="a" />
-                      <Bar dataKey="investment" fill="var(--rv-secondary)" stackId="a" />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </div>
-              </div>
+             
 
               <div className="space-y-8 lg:pl-32 md:pr-40 mt-4 ">
                 {/* Invested Amount Section */}
@@ -266,28 +250,21 @@ useEffect(() => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeInVariants}
-          custom={1} className="p-8 bg-white md:absolute md:w-[45%]  md:right-2 md:bottom-24">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">
-                Invest in your favorite Ones
-              </h3>
-              {/* <p className="text-gray-600 mb-6">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-    suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-  </p> */}
-              <p className="text-gray-600 mb-6 text-justify">
-                We offer a variety of tools to help you manage and track your
-                investments more efficiently. Explore our suite of tools to stay
-                on top of the market and make informed decisions. From price
-                trackers to advanced market analysis, our tools are designed to
-                help you achieve your financial goals with ease.
-              </p>
-              <div className="flex flex-col gap-4 lg:flex-row md:gap-4">
-               
-                  <Button className="font-bold bg-[var(--rv-primary)]  px-4 py-2 rounded-lg text-white">
-                    <Link href={"/performance/fund-performance"}>View Market Watch</Link>
-                  </Button>
-              </div>
+          custom={1} className="p-2 bg-white md:absolute md:w-[45%]  md:right-2 md:bottom-16">
+               <div className="mt-2 h-[200px] lg:h-[220px]  bg-white">
+                  {/* <Bar data={chartDataset} options={chartOptions} /> */}
+                  <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={chartDataset}>
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="year" />
+                      <YAxis />
+                      <Tooltip />
+                      <Legend />
+                      <Bar dataKey="profit" fill="var(--rv-primary)" stackId="a" />
+                      <Bar dataKey="investment" fill="var(--rv-secondary)" stackId="a" />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
             </MotionCard>
           </div>
         </div>

@@ -61,7 +61,7 @@ const RetirementPlanning = async () => {
           <div className="md:col-span-2">
             <div className="rounded-xl overflow-hidden mb-6">
               <Image
-                src="/services/retirement-planning.webp"
+                src="/Services/retirement-planning.webp"
                 alt="Retirement Planning"
                 width={800}
                 height={400}

@@ -90,7 +90,7 @@ const Navbar = ({service}) => {
         variants={navbarVariants}
       >
         <nav
-          className={`w-full max-w-screen-xl bg-[var(--rv-primary)] bg-opacity-90 shadow-md p-2 lg:px-15 z-50 flex justify-between items-center transition-all duration-300 ${
+          className={`w-full max-w-screen-xl bg-[var(--rv-primary)] bg-opacity-90 shadow-md p-2 lg:px-15 z-50 flex justify-between items-center rounded-b-4xl transition-all duration-300 ${
             isSticky ? "fixed top-0" : "fixed top-0"
           }`}
         >

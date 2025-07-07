@@ -50,7 +50,7 @@ const MutualFunds = async () => {
                     className="flex justify-between items-center border-b pb-2 hover:text-[--rv-primary] group"
                   >
                     <Link
-                      href={`/service/${service.link}`}
+                      href={`/Service/${service.link}`}
                       className="flex-1 transition-colors duration-300"
                     >
                       + {service.name}
