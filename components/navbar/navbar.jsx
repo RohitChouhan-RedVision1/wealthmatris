@@ -187,7 +187,7 @@ const Navbar = ({service}) => {
         {/* {items.map((item) => ( */}
           <Link
             key={service.link}
-            href={`/service`}
+            href={`/service/${service.link}`}
             className="block py-1 text-sm"
             onClick={() => {
               setIsOpen(false);
